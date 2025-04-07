@@ -53,7 +53,8 @@ new class extends Component {
     $this->dispatch('success-notif');
     
     $this->reset('claim_type', 'date', 'amount', 'notes', 'Agreement', 'receipt',);
-    // return redirect('/dashboard');
+    sleep(0);
+    $this->redirect('/request', navigate: true);
 }
 
    

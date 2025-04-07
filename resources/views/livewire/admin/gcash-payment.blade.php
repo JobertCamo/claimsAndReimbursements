@@ -22,6 +22,7 @@ new class extends Component {
         $claim->update([
             'payment_status' => 'paid'
         ]);
+        $this->redirect('payments', navigate: true);
     }
     
 }; ?>

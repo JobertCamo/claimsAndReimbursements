@@ -20,7 +20,7 @@ new class extends Component {
     public function delete(Claim $claim)
     {
         $claim->delete();
-        $this->redirect('dashboard', navigate: true);
+        $this->redirect('request', navigate: true);
         $this->dispatch('success');
     }
 
